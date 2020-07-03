@@ -8,7 +8,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CartComponent } from './cart/cart.component';
 import { MyordersComponent } from './myorders/myorders.component';
-import { BuynowComponent } from './buynow/buynow.component';
+
 
 @NgModule({
   declarations: [
@@ -17,8 +17,7 @@ import { BuynowComponent } from './buynow/buynow.component';
     BookDetailComponent,
     CheckoutComponent,
     CartComponent,
-    MyordersComponent,
-    BuynowComponent
+    MyordersComponent
   ],
   imports: [
     BrowserModule,
