@@ -11,6 +11,11 @@ export class HomeComponent implements OnInit {
 
   books = BOOKS;
   selectedBook: Book;
+  show = 14;
+
+  increaseShow(){
+    this.show +=5;
+  }
   
   constructor() {
     console.log("constructor")

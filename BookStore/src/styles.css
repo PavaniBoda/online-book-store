@@ -91,3 +91,9 @@ button[disabled] {
     background-color: darkgrey;
     color: #000;
 }
+
+@media screen and (min-width:320px and max-width:768px) {
+    .bookContainer {
+        display: block;
+    }
+}
