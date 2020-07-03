@@ -1,0 +1,15 @@
+<div class="selectedBook">
+    <p><img class="custom-image-style" src="{{selectedBook.image}}" height="150" width="150" style="display: block;"></p>
+    <div>
+        <p><strong>{{selectedBook.title}}</strong></p>
+        <p><span>Book Price: </span>{{selectedBook.price}}</p>
+        <p><span>Author Name: </span>{{selectedBook.author}}</p> 
+        <p><span>Page Count: </span>{{selectedBook.pagecount}}</p> 
+        <div>
+            <button class="btn btn-primary btn-sm addToCart" (click)="addToCart(selectedBook.id)"
+                            >Add To Cart</button>
+            <button class="btn btn-primary btn-sm addToCart" [routerLink] = "['/cart/',selectedBook.id]"
+                            [disabled]="selectedBook.purchased===true">Buy Now</button>
+        </div>
+    </div>
+</div>

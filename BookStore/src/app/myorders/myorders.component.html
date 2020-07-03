@@ -1,0 +1,11 @@
+<p *ngIf="orderedBooks==null">No ordered Items</p>
+<div class="selectedBook" *ngFor = "let book of orderedBooks;let i=index">
+    <p id="orderStatus"><span>Ordered Items</span></p>
+    <p><img class="custom-image-style" src="{{book.image}}" height="150" width="150" style="display: block;"></p>
+    <div>
+        <p><strong>{{book.title}}</strong></p>
+        <p><span>Book Price: </span>{{book.price}}</p>
+        <p><span>Author Name: </span>{{book.author}}</p> 
+        <p><span>Page Count: </span>{{book.pagecount}}</p> 
+    </div>
+</div>

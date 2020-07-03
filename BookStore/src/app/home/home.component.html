@@ -1,0 +1,18 @@
+<div class="bookContainer row">
+    <div *ngFor="let book of books;let i=index" [routerLink] = "['/home/',book.id]">
+        <div class="card card-block">
+           <img class="custom-image-style" src="{{book.image}}" height="100" width="100" style="display: block;">
+            <div class="book-desc-container">
+                <div>
+                    <p><strong>{{book.title}}</strong></p>
+                    <p>{{book.author}}</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-sm addToCart" [routerLink] = "['/cart/',book.id]"
+                        [disabled]="book.purchased===true">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

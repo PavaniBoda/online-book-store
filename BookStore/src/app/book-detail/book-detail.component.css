@@ -1,0 +1,13 @@
+.selectedBook {
+    display: flex;
+}
+
+.selectedBook > * {
+    margin-right: 20px;
+}
+p{
+    margin-bottom: 5px;;
+}
+.addToCart {
+    margin-right: 10px;
+}

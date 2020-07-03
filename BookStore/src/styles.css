@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+html,header,section,h1,nav,ul,li,p,body.div,button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 83%;
+    margin: 0 auto;
+}
+
+#bookContainer {
+    border: 3px solid #DDD;
+}
+
+header {
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 3px solid #DDD;
+}
+
+header > h1 {
+    font-size: 20px;
+}
+
+#routerRender {
+    padding: 10px;
+}
+
+
+h1 {
+    float: left;
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li{
+    display: inline;
+    margin-right: 5px;
+    border-right: 2px solid #DDD;
+    padding: 5px;
+}
+
+#menu ul li:last-child {
+    border-right: 0;
+}
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+#bookInfo {
+    background-color: darkgray;
+}
+
+.bookContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bookContainer > div {
+    margin-right: 20px;
+    height: 215px;
+}
+.book-desc-container {
+    text-align: center;
+    background-color: #DDD;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.addToCart {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: default;
+    background-color: darkgrey;
+    color: #000;
+}

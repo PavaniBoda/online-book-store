@@ -1,0 +1,11 @@
+.selectedBook {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+#orderStatus {
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
