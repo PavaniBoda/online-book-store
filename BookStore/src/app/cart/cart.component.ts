@@ -49,23 +49,29 @@ export class CartComponent implements OnInit {
       this.showPayment = true;
       (this.cartData || []).map(item => {
         return this.itemsprice = this.itemsprice + item.price;
-        // return cost + item.price
       })
       console.log("price", this.itemsprice);
       this.tax = this.itemsprice * 5 / 100;
       this.deliveryCharge = this.itemsprice * 2 / 100;
       this.total = this.itemsprice + this.tax + this.deliveryCharge;
     } 
-    console.log(this.cartData);
   }
   checkout() {
       this.cartData.map(item => {
         item.isAdded = false;
         item.purchased = true;
       })
-      localStorage.setItem('checkout', JSON.stringify(this.cartData));
+
+      let checkout = [];
+      let checkoutData = localStorage.getItem("checkout");
+      if (checkoutData !== null) {
+        checkout = JSON.parse(checkoutData);
+      }
+      checkout = checkout.concat(this.cartData || []);
+      
+      localStorage.setItem('checkout', JSON.stringify(checkout));
+
       localStorage.removeItem('cart');
-      console.log("checkout", localStorage.getItem('checkout'));
     }
 }
 

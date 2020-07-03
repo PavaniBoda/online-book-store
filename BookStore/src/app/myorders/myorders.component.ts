@@ -19,7 +19,6 @@ export class MyordersComponent implements OnInit {
     if(orderedBookres !== null || orderedBookres!== undefined) {
       this.orderedBooks = JSON.parse(orderedBookres);
     }
-    console.log('order',this.orderedBooks)
   }
 
 }
